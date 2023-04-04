@@ -1,0 +1,102 @@
+body
+{
+    font-family: 'Times New Roman', Times, serif, serif;
+}
+
+.overlay
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 11100;
+    background: rgb(0, 0, 0, 0.7);
+    transition: opacity .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target
+{
+    visibility: visible;
+    opacity: 1;
+    z-index: 10000000;
+}
+
+.popup
+{
+    margin: 6rem auto;
+    padding: 2rem;
+    background: rgb(82, 84, 102);
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    transition: .4s ease-in-out;
+    
+    
+}
+
+.popup .Détails1{
+    color: aliceblue;
+    margin: 1%;
+    
+}
+
+.popup .Détails1 p{
+    color: whitesmoke;
+    font-size: large;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.popup .cross
+{
+  
+    position: relative;
+   
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: rgb(255, 1, 1);
+    z-index: 1000000000000000000000;
+}
+
+
+
+.popup .Détails1
+{   justify-content: center;
+    position: relative;
+    height: 50%;
+    display: inline-block;
+    z-index: 10000000000000000000;
+}
+
+
+.popup .Détails1 img
+{
+    
+    width: 49%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popup .Détails1 img:hover{
+    -ms-transform: scale(1.5); 
+-webkit-transform: scale(1.5);
+transform: scale(1.5);
+transition: 1s;
+transition-delay: 0.05s;
+}
+
+
+
+
+
+
+

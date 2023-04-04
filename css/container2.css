@@ -1,0 +1,270 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(11, 32, 65);
+}
+
+.tout
+{
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   position: relative;
+   z-index: 1;
+   margin-left: 20%;
+}
+
+.container2
+{
+    margin-top:-400px;
+    margin-bottom: 10px;
+}
+
+.container2 h3
+{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 150px;
+    font-size: 5vh;
+    text-decoration-line:underline;
+}
+
+.container2 ul
+{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.container2 ul
+{
+    position: relative;
+    transform: skewY(-15deg);
+    margin-bottom: 100px;
+    
+
+}
+
+.container2 ul li
+{
+    position: relative;
+    list-style: none;
+    width: 260px;
+    background-color: rgb(31, 95, 191);
+    padding: 40px;
+   z-index: var(--i);
+   transition: 0.5s;
+   top: -105px;
+   
+}
+
+
+
+.container2 ul li:hover
+{
+    background: rgb(197, 218, 250);
+   transform: translateX(-40px);
+   
+}
+
+.container2 ul li:hover::before 
+{
+    background: rgb(0, 57, 150);
+}
+.container2 ul li:hover::after
+{
+    background: rgb(34, 101, 201);
+}
+
+.container2 ul li::before
+{
+    content: '';
+    position: absolute;
+    width: 40px;
+    top:0;
+    left: -40px;
+    height: 100%;
+    background: rgb(5, 16, 32);;
+    transform-origin: right;
+    transform: skewY(45deg);
+
+
+}
+
+.container2 ul li::after
+{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color:rgb(16, 51, 102);;
+    transform-origin:bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+.container2 ul li a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0,5s;
+}
+
+.container2 ul li:hover a
+{
+    color: rgb(0, 57, 150);
+}
+
+.container2 ul li:last-child::after
+{
+    box-shadow: -155px 150px 20px rgb(0,0,0,0.25);
+}
+
+
+.container2 .choppeur
+{
+    width: 280px;
+    position: relative;
+    right: 837px;
+    top: 17px;
+    z-index: -10000;
+    
+}
+
+@media (max-width:1150px)
+{
+
+    .tout
+    {
+        margin: 5%;
+    }
+
+    .container2 ul li:hover
+    {
+        background: rgb(197, 218, 250);
+       transform: translateX(0px);
+       
+    }
+
+
+    .container2 ul 
+    {
+    
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        transform: skewY(0deg);
+        margin-bottom: 100px;
+        border-top: 3px solid rgb(197, 218, 250);
+        border-bottom: 3px solid rgb(197, 218, 250);
+        margin-left: 0%;
+        border: 3px solid rgb(197, 218, 250);
+        border-right: none;
+        top: -185px;
+        transition: 0.5s;
+        transition-delay: 0.25s;
+        
+    }
+ 
+    .container2 ul li
+    {
+        top: 0px;
+       
+    }
+    .container2
+    {
+        transform: translateY(-325px);
+        margin-bottom: -425px;
+    }
+
+    .container2 ul
+    {
+        border: 3px solid rgb(197, 218, 250);
+        border-right: none;
+        top: -185px;
+        transition: 0.5s;
+        transition-delay: 0.25s;
+    }
+
+    .container2 ul li {
+        border: none;
+    }
+
+    .container2
+    {
+        width: 100%;
+    }
+
+    .container2 ul li::before
+    {
+     display: none;
+    }
+
+    .container2 ul li::after
+    {
+    display: none;
+    }
+}
+
+@media (max-width:950px)
+{
+
+    .container2
+{
+   
+}
+
+    .container2 .class
+    {
+        display: flexbox;
+        position: relative;
+        top: 60px;
+        right:315px;
+      
+    }
+
+    .vrmntout
+    {
+      
+    }
+    
+    .container2 ul 
+    {
+        position: relative;
+        top: -460px;
+        left: 370px;
+       border:none; 
+       display: flex;
+       background-color: rgb(31, 95, 191);
+       margin: 0;
+       
+      
+    }
+
+    .container2 ul li
+    {
+        width: 15vmax;
+        padding: 10px;
+        
+    }
+
+}

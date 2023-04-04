@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(11, 32, 65);
+}
+
+
+.container2 .Education
+{
+  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 295px;
+    
+}
+
+.container2 .Education p
+{
+  
+    position: relative;
+    list-style: none;
+    width: 680px;
+    top: -7px;
+    padding: 56.5px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 0;
+    transform: skewY(6deg);
+    
+}
+
+.container2 .Education p::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 680px;
+    width: 40px;
+    height: 100%;
+    background-color: rgb(5, 16, 32);
+    transform-origin: left;
+    transform: skewY(-45deg);
+    transition: 0.5s;
+    
+}
+
+.container2 .Education .contour::after
+{
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    background-color:rgb(16, 51, 102);
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+    transition: 0.5s;
+}
+
+.container2 .Education:last-child::after
+{
+    box-shadow: -670px 15px 20px rgb(5, 16, 32);
+}
+
+
+.container2 .Education a1
+{
+    color: rgb(31, 95, 191);
+}
+
+.container2 .Education .titre1
+{
+    position: relative;
+    right: 150px;
+}
+
+.container2 .Education .titre2
+{
+    position: relative;
+    right: 165px;
+}
+
+.container2 .Education .titre3
+{
+    position: relative;
+    right: 120px;
+}
+
+.container2 .Education a2
+{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    background-color: rgb(31, 95, 191);
+   padding: 5px;
+   border-radius: 12px;
+}
+
+.container2 .Education .date1
+{
+    position: relative;
+    left: 220px;
+}
+
+.container2 .Education .date2
+{
+    position: relative;
+    left: 235px;
+}
+
+.container2 .Education .date3
+{
+    position: relative;
+    left: 190px;
+}
+
+.container2 .Education a3
+{
+    font-size:15px;
+}
+
+.container2 .Education .AP
+{
+    position: relative;
+   right: 60px;
+}
+
+.container2 .Education .APC
+{
+  
+    position: relative;
+    right: 125px;
+}
+
+
+.container2 .Education .BAC
+{
+   
+    position: relative;
+    right: 125px;
+}
+
+@media (max-width:1150px)
+{
+    
+
+    .container2 .Education
+    {
+        border: 3px solid rgb(197, 218, 250);
+        border-left: none;
+        top: -87px;
+        transition: 0.5s;
+        transition-delay: 0.25s;
+
+    }
+
+    .container2 .Education p
+{
+    
+    position: relative;
+    list-style: none;
+    width: 680px;
+    padding: 56.75px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 0;
+    transform: skewY(0deg);
+    top: 0px;
+    
+    
+}
+    
+.choppeur
+{
+    display: none;
+}
+
+    .container2 .Education p::before
+{
+    display: none;
+    
+}
+
+.container2 .Education .contour::after
+{
+   display: none;
+}
+}
